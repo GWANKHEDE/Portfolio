@@ -354,9 +354,12 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #173b6c;
-
-
 }
+.profile-img {
+  border-radius: 16px; /* Adjust this value to change the roundness */
+  box-shadow: 0 4px 8px rgb(12, 176, 241); /* Adds a subtle shadow */
+}
+
 
 .about .content ul {
   list-style: none;
@@ -367,7 +370,6 @@ section {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.07);
