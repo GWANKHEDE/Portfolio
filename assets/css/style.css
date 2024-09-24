@@ -81,6 +81,9 @@ h6 {
 }
 
 #header .profile h1 {
+  background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -155,6 +158,9 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-menu>ul>li {
@@ -253,6 +259,10 @@ h6 {
 }
 
 #hero h1 {
+  background: -webkit-linear-gradient(45deg, #00FFA3, #f0e68c, #FF007C, #B825F7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: #00FFA3;
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -261,6 +271,9 @@ h6 {
 }
 
 #hero p {
+  background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
@@ -380,14 +393,18 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skill{
+.skill {
   font-size: 16px;
 }
+
 .skill-icon {
-  width: 24px; /* Adjust the width as needed */
+  width: 24px;
+  /* Adjust the width as needed */
   height: auto;
-  vertical-align: middle; /* Ensures the image is aligned with the text */
-  margin-right: 8px; /* Space between the image and the text */
+  vertical-align: middle;
+  /* Ensures the image is aligned with the text */
+  margin-right: 8px;
+  /* Space between the image and the text */
 }
 
 .skills {
@@ -441,13 +458,13 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume{
-background: rgba(90, 185, 226, 0.05);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(111, 203, 246, 0.46);
+.resume {
+  background: rgba(90, 185, 226, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(111, 203, 246, 0.46);
 }
 .resume .resume-title {
   font-size: 26px;
@@ -621,25 +638,25 @@ border: 1px solid rgba(111, 203, 246, 0.46);
   outline: none;
   /* focus:outline-none */
 }
-        
 /* Button styling */
 button {
   width: 100%;
-  background-image: linear-gradient(to right, #ff4b1f 0%, #1fddff  51%, #ff4b1f  100%);
+  background-image: linear-gradient(to right, #ff4b1f 0%, #1fddff 51%, #ff4b1f 100%);
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;            
+  color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
 }
 
 button:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
+  /* change the direction of the change here */
   color: #fff;
   text-decoration: none;
 }
@@ -663,7 +680,7 @@ button:hover {
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   width: 100%;
-  
+
 
 }
 
@@ -850,10 +867,10 @@ button:hover {
   width: 300px;
   z-index: 9999;
   backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 #footer .copyright {
