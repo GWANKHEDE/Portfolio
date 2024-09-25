@@ -889,7 +889,7 @@ button:hover {
 
 #footer .copyright {
   text-align: center;
-  background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
+  background: -webkit-linear-gradient(#f0e68c, #0c0c0c, #87ceeb, #f0a500);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
