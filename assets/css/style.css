@@ -261,6 +261,7 @@ h6 {
 #hero h1 {
   background: -webkit-linear-gradient(45deg, #00FFA3, #f0e68c, #FF007C, #B825F7);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: #00FFA3;
   margin: 0 0 10px 0;
@@ -273,6 +274,7 @@ h6 {
 #hero p {
   background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #fff;
   margin-bottom: 50px;
@@ -349,6 +351,9 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about{
+  background-image: linear-gradient(160deg, #F6F6F2 0%, #F6F6F2 100%);
+}
 
 .about .content h3 {
   font-weight: 700;
@@ -395,18 +400,19 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skill {
+.skill{
   font-size: 16px;
+  background: -webkit-linear-gradient(#000000, #6808e6, #e76800, #702121);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skill-icon {
   width: 24px;
-  /* Adjust the width as needed */
   height: auto;
   vertical-align: middle;
-  /* Ensures the image is aligned with the text */
   margin-right: 8px;
-  /* Space between the image and the text */
 }
 
 .skills {
@@ -675,6 +681,12 @@ button:hover {
 .contact {
   padding-bottom: 130px;
 }
+.section-title h2 {
+  background: -webkit-linear-gradient(#f0e68c, #149ddd, #87ceeb, #f0a500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .contact .info {
   padding: 30px;
@@ -877,6 +889,10 @@ button:hover {
 
 #footer .copyright {
   text-align: center;
+  background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #footer .credits {
