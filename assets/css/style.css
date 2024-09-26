@@ -83,6 +83,7 @@ h6 {
 #header .profile h1 {
   background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 24px;
   margin: 0;
@@ -160,6 +161,7 @@ h6 {
   list-style: none;
   background: -webkit-linear-gradient(#f0e68c, #ffffff, #87ceeb, #f0a500);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -400,67 +402,64 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-.skill{
-  font-size: 16px;
-  background: -webkit-linear-gradient(#000000, #6808e6, #e76800, #702121);
+.skills-container {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  backdrop-filter: blur(15px) saturate(132%);
+    -webkit-backdrop-filter: blur(15px) saturate(132%);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+      
+}
+
+.skill-box {
+  background-color: #f7fafc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 22%;
+  text-align: center;
+}
+
+.skill-box h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  background: -webkit-linear-gradient(#44cdf0, #0c0c0c, #4700ec, #f00000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.skill-icon {
-  width: 24px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 8px;
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.skills {
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+.logos img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
 }
 
-.row.skills-content {
-  padding-top: 20px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.10);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
+.logos img:hover {
+  transform: scale(1.1);
 }
 
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+@media (max-width: 768px) {
+  .skill-box {
+      width: 45%;
+  }
 }
 
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 5px;
-}
-
-.skills .progress-bar {
-  width: 10px;
-  height: 5px;
-  transition: 0.9s;
-  background-color: #149ddd;
+@media (max-width: 480px) {
+  .skill-box {
+      width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
