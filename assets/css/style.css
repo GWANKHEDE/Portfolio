@@ -352,7 +352,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about{
-  background-image: linear-gradient(160deg, #F6F6F2 0%, #F6F6F2 100%);
+  background:#ffffffc7;
 }
 
 .about .content h3 {
