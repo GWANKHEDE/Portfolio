@@ -323,7 +323,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .section-title h2 {
@@ -477,7 +477,7 @@ section {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #050d18;
 }
 
