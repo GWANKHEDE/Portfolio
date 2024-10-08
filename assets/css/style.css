@@ -615,12 +615,9 @@ section {
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
-  /* mb-2 */
-  font-size: 0.875rem;
-  /* text-sm */
+  margin-bottom: 0.2rem;
+  font-size: 0.975rem;
   color: #000000;
-  /* text-gray-400 */
 }
 
 .form-group input,
