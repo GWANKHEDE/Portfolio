@@ -22,9 +22,7 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/* # Back to top button */
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -55,9 +53,7 @@ h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* # Header */
 #header {
   position: fixed;
   top: 0;
@@ -147,9 +143,7 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/* # Navigation Menu */
 /* Desktop Navigation */
 .nav-menu {
   padding: 30px 0 0 0;
@@ -233,9 +227,7 @@ h6 {
   left: 0;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* # Hero Section */
 #hero {
   width: 100%;
   height: 100vh;
@@ -309,10 +301,59 @@ h6 {
     margin-bottom: 30px;
   }
 }
+.btn-download-resume {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #624bff 0%, #509dd0 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
+.btn-download-resume:hover {
+  background: linear-gradient(135deg, #624bff 0%, #7c99ac 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-download-resume:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.hero-social-icons {
+  display: flex;
+  /* justify-content: center; */
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.hero-social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);
+  transition: all 0.3s ease;
+}
+
+.hero-social-icons a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px) scale(1.1);
+}
+
+.hero-social-icons i {
+  font-size: 20px;
+}
+
+/* # Sections General */
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -350,9 +391,7 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
+/* # About */
 .about{
   background:#ffffffc7;
 }
@@ -363,8 +402,8 @@ section {
   color: #173b6c;
 }
 .profile-img {
-  border-radius: 16px; /* Adjust this value to change the roundness */
-  box-shadow: 0 4px 8px rgb(12, 176, 241); /* Adds a subtle shadow */
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgb(12, 176, 241);
 }
 
 
@@ -463,9 +502,7 @@ section {
   margin-right: 10px;
 }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
+/* # Resume */
 .resume {
   background: rgba(90, 185, 226, 0.05);
   border-radius: 16px;
@@ -533,9 +570,7 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
+/* # Services */
 .services .icon-box {
   margin-bottom: 20px;
 }
@@ -588,9 +623,7 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+/* # Contact */
 
 /* Main form container */
 .form-container {
@@ -869,9 +902,7 @@ button:hover {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* # Footer */
 #footer {
   padding: 15px;
   color: #040b14;
