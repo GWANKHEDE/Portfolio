@@ -239,7 +239,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  /* background: url("../img/hero-bg.jpg") top center; */
   background-size: cover;
 }
 
@@ -399,67 +399,68 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skill{
-  font-size: 16px;
-  background: -webkit-linear-gradient(#000000, #6808e6, #e76800, #702121);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.skill-icon {
-  width: 24px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-.skills {
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-}
-.row.skills-content {
-  padding-top: 20px;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.10);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.3);
-}
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
+/* Skills Section */
+.skills-section {
+  background: linear-gradient(to right, #d9afd9, #97d9e1);
+  padding: 60px 20px;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills-section .section-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #111;
+  font-weight: 700;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
-  height: 5px;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
-.skills .progress-bar {
-  width: 10px;
-  height: 5px;
-  transition: 0.9s;
-  background-color: #149ddd;
+.skills-box {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.skills-box:hover {
+  transform: translateY(-5px);
+}
+
+.skills-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #222;
+  border-bottom: 2px solid #149ddd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skills-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-box li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.skills-box img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 /*--------------------------------------------------------------
