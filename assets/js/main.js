@@ -260,4 +260,32 @@
    */
   new PureCounter();
 
-})()
+   const projectCards = document.querySelectorAll('.project-card');
+
+  if (projectCards.length > 0) {
+    // Detect touch device (mobile/tablet)
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    if (isTouch) {
+      projectCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+          e.stopPropagation();
+
+          // Close all others
+          projectCards.forEach(c => {
+            if (c !== card) c.classList.remove('active');
+          });
+
+          // Toggle this one
+          this.classList.toggle('active');
+        });
+      });
+
+      // Close when clicking outside
+      document.addEventListener('click', () => {
+        projectCards.forEach(card => card.classList.remove('active'));
+      });
+    }
+  }
+
+})();
